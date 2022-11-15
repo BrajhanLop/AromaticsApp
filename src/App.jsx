@@ -1,11 +1,13 @@
+import { Container } from "react-bootstrap"
+import ContainerFooter from "./components/footer/ContainerFooter"
 
 
 function App() {
 
 
   return (
-    <div className="App">
-      <h1>Aromatics App</h1>
+    <div>
+      <ContainerFooter />
     </div>
   )
 }
