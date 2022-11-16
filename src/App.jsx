@@ -1,4 +1,5 @@
-import Main2 from "./components/main2/Main2"
+import ContainerMain2 from "./components/main2/ContainerMain2"
+
 
 
 function App() {
@@ -6,8 +7,8 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Aromatics App</h1>
-      <Main2/>
+     
+      <ContainerMain2/>
     </div>
   )
 }
