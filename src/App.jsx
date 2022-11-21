@@ -1,14 +1,14 @@
-import ContainerMain1 from "./components/main1/ContainerMain1"
-
+import { BrowserRouter } from "react-router-dom";
+import AromaticasRoutes from "./routes/AromaticasRoutes";
 
 function App() {
-
-
   return (
-    <div className="App">
-      <ContainerMain1 />
-    </div>
-  )
+    <>
+      <BrowserRouter>
+        <AromaticasRoutes />
+      </BrowserRouter>
+    </>
+  );
 }
 
-export default App
+export default App;

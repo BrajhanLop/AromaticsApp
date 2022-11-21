@@ -36,7 +36,7 @@ const [climatedata, setclimatedata] = useState({})
     
   },[])
  
-  console.log(climatedata.weather?.[0].icon);
+  // console.log(climatedata.weather?.[0].icon);
   return (
     <div className="container pb-3">
       <div className="row">
