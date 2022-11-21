@@ -13,6 +13,7 @@ const AromaticasRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />
         <Route path="/contacto" element={<Contacto />} />
+        {/* Agregar mas rutas */}
       </Routes>
       {/* colocar aqui el footer */}
     </>
