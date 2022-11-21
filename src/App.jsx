@@ -1,3 +1,4 @@
+import ContainerMain1 from "./components/main1/ContainerMain1"
 
 
 function App() {
@@ -5,7 +6,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Aromatics App</h1>
+      <ContainerMain1 />
     </div>
   )
 }
