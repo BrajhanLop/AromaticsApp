@@ -8,7 +8,7 @@ import Plantas from "../pages/plantas/Plantas";
 const AromaticasRoutes = () => {
   return (
     <>
-      {/* Colocar aqui el navbar */}
+      {/* Colocar aqui el navbagit add */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />
