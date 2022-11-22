@@ -1,3 +1,5 @@
+import { Container } from "react-bootstrap"
+import ContainerFooter from "./components/footer/ContainerFooter"
 
 
 import ContainerMain2 from "./components/main2/ContainerMain2"
@@ -8,13 +10,13 @@ import AromaticasRoutes from "./routes/AromaticasRoutes";
 
 function App() {
   return (
-
     <>
       <BrowserRouter>
         <AromaticasRoutes />
       </BrowserRouter>
     </>
   );
+
 }
 
 export default App;
