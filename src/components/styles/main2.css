@@ -75,5 +75,8 @@
     .imgIcon{
         margin: 30px 15px;
     }
+    .imgContainer img{
+        width: 300px;
+    }
 }
 
