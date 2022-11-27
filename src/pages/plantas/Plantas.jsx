@@ -56,60 +56,60 @@ const Plantas = () => {
 
           <div className="containerPlants d-flex flex-column align-items-center justify-content-center">
             <h4 className="titPlantasFiltro">¿Con cuál te gustaría comenzar?</h4>
-            <input type="text" className="inputFilter" />
+            <input type="text" placeholder="Albahaca..." className="inputFilter" />
             <section className="row row-cols-1 row-cols-md-3 containerCards">
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
+                <Card.Body className="cardBody">
                   <Card.Title className="text-center">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
-                <Card.Body>
-                  <Card.Title className="text-center">Albahaca</Card.Title>
+                <Card.Body className="cardBody">
+                  <Card.Title className="text-center textCardFooter">Albahaca</Card.Title>
                 </Card.Body>
               </Card>
             </section>
