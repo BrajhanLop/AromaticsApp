@@ -1,6 +1,6 @@
 import React from "react";
 import albahaca from "../../images/albahaca-1.svg";
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import "./plantas.css";
 /* import { BiSearch } from 'react-icons/fa'; */
 const Plantas = () => {
@@ -8,52 +8,56 @@ const Plantas = () => {
     <>
       <section className="container my-5">
         <div className="row">
-
-          <div className="col-4 containerFiltro">
-     
-              <h5>Filtrar por:</h5>
-              <div className="lineaFiltro"></div>
-              <h5>Época de cultivo</h5>
-              <div className="d-flex justify-content-start align-items-center">
-                <div className="colorVerde"></div>
-                <p>Primavera / verano</p>
+          <div className="containerFiltro">
+            <section className="filtro">
+              <h5 className="textFiltro">Filtrar por:</h5>
+              <div className="containerLinea">
+                <div className="lineaFiltro"></div>
               </div>
+              <h5 className="textFiltro">Época de cultivo</h5>
               <div className="d-flex justify-content-start align-items-center">
                 <div className="colorVerde"></div>
-                <p>Otoño / Invierno</p>
-              </div>
-              <div className="lineaFiltro"></div>
-              <h5>Resistencia</h5>
-              <div className="d-flex justify-content-start align-items-center">
-                <div className="colorVerde"></div>
-                <p>Interior</p>
+                <p className="parrafoFiltro">Primavera / verano</p>
               </div>
               <div className="d-flex justify-content-start align-items-center">
                 <div className="colorVerde"></div>
-                <p>Exterior</p>
+                <p className="parrafoFiltro">Otoño / Invierno</p>
               </div>
-              <div className="lineaFiltro"></div>
-              <h5>Exigencia</h5>
+              <div className="containerLinea">
+                <div className="lineaFiltro linea2"></div>
+              </div>
+              <h5 className="textFiltro">Resistencia</h5>
               <div className="d-flex justify-content-start align-items-center">
                 <div className="colorVerde"></div>
-                <p>Principiante</p>
+                <p className="parrafoFiltro">Interior</p>
               </div>
-              <div className="itemFiltro">
+              <div className="d-flex justify-content-start align-items-center">
                 <div className="colorVerde"></div>
-                <p>Intermedio</p>
+                <p className="parrafoFiltro">Exterior</p>
               </div>
-              <div className="itemFiltro">
+              <div className="containerLinea">
+                <div className="lineaFiltro linea2"></div>
+              </div>
+              <h5 className="textFiltro">Exigencia</h5>
+              <div className="d-flex justify-content-start align-items-center">
                 <div className="colorVerde"></div>
-                <p>Experimentado</p>
+                <p className="parrafoFiltro">Principiante</p>
               </div>
-      
+              <div className="d-flex justify-content-start align-items-center">
+                <div className="colorVerde"></div>
+                <p className="parrafoFiltro">Intermedio</p>
+              </div>
+              <div className="d-flex justify-content-start align-items-center">
+                <div className="colorVerde finConMargin"></div>
+                <p className="parrafoFiltro finConMargin">Experimentado</p>
+              </div>
+            </section>
           </div>
 
-          <div className="col-8 d-flex flex-column align-items-center justify-content-center">
-            <h4>¿Con cuál te gustaría comenzar?</h4>
+          <div className="containerPlants d-flex flex-column align-items-center justify-content-center">
+            <h4 className="titPlantasFiltro">¿Con cuál te gustaría comenzar?</h4>
             <input type="text" className="inputFilter" />
             <section className="row row-cols-1 row-cols-md-3 containerCards">
-
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />
                 <Card.Body>

@@ -10,14 +10,13 @@ import Plantas from "../pages/plantas/Plantas";
 const AromaticasRoutes = () => {
   return (
     <>
-      <NavbarApp/>
+      {/* <NavbarApp/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />
         <Route path="/contacto" element={<Contacto />} />
         {/* Agregar mas rutas */}
       </Routes>
-      <Plantas />
       <ContainerFooter/>
     </>
   );
