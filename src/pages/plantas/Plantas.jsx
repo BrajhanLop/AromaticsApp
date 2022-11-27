@@ -1,8 +1,11 @@
 import React from "react";
 import albahaca from "../../images/albahaca-1.svg";
+
 import Card from "react-bootstrap/Card";
 import "./plantas.css";
+import OffCanvas from "./OffCanvas";
 /* import { BiSearch } from 'react-icons/fa'; */
+
 const Plantas = () => {
   return (
     <>
@@ -54,9 +57,14 @@ const Plantas = () => {
             </section>
           </div>
 
-          <div className="containerPlants d-flex flex-column align-items-center justify-content-center">
+          <div className="containerPlants">
             <h4 className="titPlantasFiltro">¿Con cuál te gustaría comenzar?</h4>
             <input type="text" placeholder="Albahaca..." className="inputFilter" />
+            <section className="filtroMobile">
+              
+              <OffCanvas />
+              <p className="textoBtnFiltrar">Filtrar</p>
+            </section>
             <section className="row row-cols-1 row-cols-md-3 containerCards">
               <Card className="cardPlanta">
                 <Card.Img className="planta" variant="top" src={albahaca} />

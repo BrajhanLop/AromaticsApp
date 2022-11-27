@@ -1,6 +1,10 @@
 
 .containerPlants {
     width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerFiltro {
@@ -85,6 +89,9 @@
 .cardPlanta {
     width: 13rem;
     margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 .planta {
@@ -92,7 +99,7 @@
 }
 
 .cardBody {
-    background: rgba(165, 214, 167, 0.62);
+    background-color: rgba(165, 214, 167, 0.62);
     border-radius: 0px 0px 15px 15px;
 }
 
@@ -102,9 +109,72 @@
     font-size: 1rem;
 }
 
+.filtroMobile {
+    display: none;
+}
+
 @media (max-width: 576px) {
+
+    .containerPlants {
+        width: 100%;
+    }
+
+    .cardPlanta {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 1.5rem;
+    }
+
+    .inputFilter {
+        width: 85%;  
+        margin-bottom: 1.5rem;
+    }
+
+    .titPlantasFiltro {
+        text-align: center;
+        font-size: 1rem;
+    }
+
     
     .containerFiltro {
         display: none;
+    }
+
+    .filtroMobile {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        margin-right: 60%;
+    }
+
+    .textoBtnFiltrar {
+        font-size: .9rem;
+        font-weight: 400;
+        margin-left: .3rem;
+        margin-bottom: 0;
+        margin-top: .2rem;
+
+    }
+
+    .btnFiltro {
+        background-color: transparent;
+        border: none;
+        padding-right: 0;
+    }
+
+    .imageFiltrar {
+        width: 1.2rem;
+    }
+
+    .containerOffcanvas {
+        width: 100%;
+    }
+
+    .filtro {
+        width: 100%;
+        margin-top: 0;
     }
 }
