@@ -14,10 +14,12 @@ export default function OffCanvas() {
             <img className="imageFiltrar" src={filtrar} alt="aromaticas" />
         </Button>
 
-        <Offcanvas className="containerOffcanvas" show={show} onHide={handleClose}>
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title></Offcanvas.Title>
-        </Offcanvas.Header>
+        <Offcanvas className="containerOffcanvas" style={{width:"80%"}} show={show} onHide={handleClose}>
+        <div style={{background:"red"}}>
+          <Offcanvas.Header closeButton>
+            <Offcanvas.Title></Offcanvas.Title>
+          </Offcanvas.Header>
+        </div>
         <Offcanvas.Body className="containerOffcanvas">
           
         {/* /* --------cambios empece dos pasos mas atras  ctrl z y ctrl z + ----- */ }
