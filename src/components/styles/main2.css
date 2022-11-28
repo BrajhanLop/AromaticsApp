@@ -66,17 +66,41 @@
 }
 @media (max-width:576px){
     .containerIcons{
-        margin-left: 200px;
+        margin-left: 240px;
         margin-top: 450px;
         margin-right: 70px;
-        width: 200px;
+        width: 40%;
         padding: 2px;  
     }
     .imgIcon{
-        margin: 30px 15px;
+        margin: 20px 15px;
     }
     .imgContainer img{
-        width: 300px;
+        width: 80%;
     }
 }
 
+@media (max-width:392px){
+    .main2Container{
+        margin: 100px 0;
+    }
+    .imgIcon{
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width:300px){
+    .containerIcons{
+        margin-left: 180px;
+        margin-top: 550px;
+        margin-right: 70px;
+        width: 40%;
+        padding: 2px;  
+    }
+    .containerIcons img{
+        width: 30px;
+    }
+    .imgIcon{
+        margin: 10px 7px;
+    }
+}
