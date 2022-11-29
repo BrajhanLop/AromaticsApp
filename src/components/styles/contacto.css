@@ -1,0 +1,121 @@
+form{
+    font-family: "Montserrat"; 
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+}
+.contactContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../../images/Fondo_Contacto.png);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+}
+
+.contactTitle{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.formContact{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+}
+
+.input{
+    margin: 1rem 0.5rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 7px;
+    text-align: start;
+}
+.textArea{
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin: 0 3rem;
+}
+.inputText{
+    
+    padding-left: 0.5rem;
+    padding: 0.5rem 2rem; 
+    border-radius: 7px;
+    text-align: start;
+    width: 40%;
+}
+
+@media (max-width: 360px) { 
+    .formContact{
+       flex-direction: column;
+       align-items: center;
+    }
+    .input{
+        width: 78%;
+        margin: 0.5rem 0.5rem;
+        padding-left: 0.5rem;
+    }
+    .input::placeholder{
+        text-align: start;
+        padding-left: 0%;
+    }
+    .textArea{
+        width: 70%;
+        align-items: center;
+        margin-top: 0.5rem;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+
+ 
+@media (max-width: 992px) { 
+    .formContact{
+        width: 70%;
+       flex-direction: column;
+       align-items: center;
+    }
+    .input{
+        width: 100%;
+        margin: 0.5rem 0;
+        padding: 0.3rem;
+        padding-right: 0.3rem;
+        padding-left: 0.3rem;
+        padding-bottom: 0rem;
+        border-radius: 7px;
+        text-align: start;
+        background-color: #E8F5E9;
+    }
+    .input::placeholder{
+        padding: 10px;
+    }
+    .textArea{
+        width: 70%;
+        align-items: center;
+        margin-top: 0.5rem;
+        background-color: #E8F5E9;
+        border-radius: 5px;
+    }
+    .inputText{
+        width: 100%;
+        padding-left: 0.3rem;
+        padding: 0 0.3rem; 
+        max-height: 175px;
+        padding: 10px;
+    }
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+ }
+

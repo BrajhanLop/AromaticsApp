@@ -12,6 +12,7 @@ const AromaticasRoutes = () => {
   return (
     <>
       <NavbarApp />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />
