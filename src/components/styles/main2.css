@@ -5,6 +5,7 @@
 .main2Container{
     height: 100vh;
     display: flex;
+    justify-content: center;
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     
@@ -36,4 +37,70 @@
 }
 .imgIcon{
     margin: 0 28px;
+}
+
+@media (max-width:992px){
+    .main2Container{
+        height: 90vh;
+        flex-direction: column-reverse;
+        
+    }
+    .containerInfo{
+        margin-bottom: 0px;
+    }
+}
+
+@media (max-width:768px){
+    .main2Container{
+        height: 100vh;
+    }
+
+    .imgContainer{
+        margin-bottom: 8rem;
+    }
+    .containerIcons{
+        margin-left: 150px;
+        margin-top: 350px;
+        width: 300px;
+    }
+}
+@media (max-width:576px){
+    .containerIcons{
+        margin-left: 240px;
+        margin-top: 450px;
+        margin-right: 70px;
+        width: 40%;
+        padding: 2px;  
+    }
+    .imgIcon{
+        margin: 20px 15px;
+    }
+    .imgContainer img{
+        width: 80%;
+    }
+}
+
+@media (max-width:392px){
+    .main2Container{
+        margin: 100px 0;
+    }
+    .imgIcon{
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width:300px){
+    .containerIcons{
+        margin-left: 180px;
+        margin-top: 550px;
+        margin-right: 70px;
+        width: 40%;
+        padding: 2px;  
+    }
+    .containerIcons img{
+        width: 30px;
+    }
+    .imgIcon{
+        margin: 10px 7px;
+    }
 }

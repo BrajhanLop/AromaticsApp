@@ -5,7 +5,7 @@ import '../styles/main1.css';
 const ContainerMain1 = () => {
     return (
         
-        <div className='container-fluid bg-main pt-5'>
+        <div className='container-fluid bg-main pt-2 pt-md-5'>
             <Main1 />
         </div>
     );
