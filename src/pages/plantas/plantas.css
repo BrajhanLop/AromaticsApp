@@ -1,0 +1,192 @@
+
+.containerPlants {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerFiltro {
+    width: 30%;
+}
+
+/* -----styles de filtro------- */
+
+.filtro {
+    background: rgba(27, 94, 32, 0.3);
+    width: 90%;
+    border-radius: .8rem;
+    margin-top: 15%;
+}
+
+.textFiltro {
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: "Montserrat";
+    margin-bottom: 0;
+    padding: 1rem;
+}
+
+.parrafoFiltro {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "Montserrat";
+    margin-bottom: 0;
+    padding: .5rem;
+}
+
+.colorVerde {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: #6B996E;
+    margin-left: 1rem;
+}
+
+.containerLinea {
+    display: flex;
+    justify-content: center;
+}
+
+.lineaFiltro {
+    width: 85%;
+    border: 1px solid #000;
+    background-color: #000;
+}
+
+.linea2 {
+    margin-top: 1rem;
+}
+
+.finConMargin {
+    margin-bottom: 1.5rem;
+}
+/* -----fin de styles de filtro------- */
+
+.titPlantasFiltro {
+    margin-bottom: 1.5rem;
+    font-family: "Montserrat";
+    font-weight: 600;
+}
+
+.inputFilter {
+    width: 100%;
+    height: 3.4rem;
+    border-radius: .9rem;
+    border: none;
+    font-style: italic;
+    font-weight: 400;
+    padding: 1rem;
+    background-color: rgba(27, 94, 32, 0.3);
+    margin-bottom: 3.5rem;    
+}
+
+.inputFilter::placeholder {
+    background-image: url("../../images/lupa.png");
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+    background-position: right;
+}
+
+.containerCards {
+    display: flex;
+    justify-content: space-between;
+}
+
+.cardPlanta {
+    width: 13rem;
+    margin-bottom: 2.5rem;
+    border-radius: 1.5rem;
+    padding-right: 0;
+    padding-left: 0;
+    border: none;
+}
+
+.planta {
+    width: 100%;
+}
+
+.cardBody {
+    background-color: rgba(165, 214, 167, 0.62);
+    border-radius: 0px 0px 15px 15px;
+}
+
+.textCardFooter {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.filtroMobile {
+    display: none;
+}
+
+@media (max-width: 576px) {
+
+    .containerPlants {
+        width: 100%;
+    }
+
+    .cardPlanta {
+        width: 80%;
+        margin: auto;
+        margin-bottom: 1.5rem;
+        padding-right: 0;
+        padding-left: 0;
+        border-radius: 1.5rem;
+    }
+
+    .inputFilter {
+        width: 85%;  
+        margin-bottom: 1.5rem;
+    }
+
+    .titPlantasFiltro {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    
+    .containerFiltro {
+        display: none;
+    }
+
+    .filtroMobile {
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 1.5rem;
+        margin-right: 60%;
+    }
+
+    .textoBtnFiltrar {
+        font-size: .9rem;
+        font-weight: 400;
+        margin-left: .3rem;
+        margin-bottom: 0;
+        margin-top: .2rem;
+
+    }
+
+    .btnFiltro {
+        background-color: transparent;
+        border: none;
+        padding-right: 0;
+    }
+
+    .imageFiltrar {
+        width: 1.2rem;
+    }
+
+    .containerOffcanvas {
+        padding: 0;
+        background-color: #1B5E20;
+    }
+
+    .filtro {
+        background: #bacfbc;
+        width: 100%;
+        border-radius: 0;
+        margin-top: 0;
+        height: 90%;
+    }
+}

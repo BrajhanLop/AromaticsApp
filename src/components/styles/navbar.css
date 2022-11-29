@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Yeseva+One&display=swap');
+.containerNav{
+    background-color: #E8F5E9;
+    
+}
+
+.logoNav{
+    color: #002600;
+    font-family:'Yeseva One', cursive;
+    font-size: 24px;
+}
+
+
+
+.navItem{ 
+    display: flex;
+    justify-content: end;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.item{
+    color: #002600;
+    margin: 0 25px;  
+}
+
+@media (max-width:992px){
+    .navItem{
+        justify-content: start;
+    }
+}
+
