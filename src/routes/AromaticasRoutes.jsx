@@ -11,7 +11,7 @@ import Plantas from "../pages/plantas/Plantas";
 const AromaticasRoutes = () => {
   return (
     <>
-      <NavbarApp/>
+      {/* <NavbarApp/> */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />

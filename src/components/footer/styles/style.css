@@ -31,13 +31,19 @@
     font-weight: 700;
 }
 .liFooter {
-    list-style-type: none;
+    color: #002600;
+    font-size: 1rem;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+    border: none;
+    background: none;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
 }
 .containerNavbarFooter {
     margin-top: 4.5rem;
     margin-bottom: 2.7rem;
+
 }
 .copyrightFooter {
     font-family: 'Montserrat', sans-serif;
@@ -51,5 +57,28 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    .inputFooter {
+        width: 80%;
+    }
+
+    .btnFooter {
+        width: 80%;
+    }
+
+    .containerNavbarFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .liFooter {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        margin-left: 0;
+        font-weight: 700;
     }
 }

@@ -1,10 +1,11 @@
 import React from 'react'
 import NavbarFooter from './NavbarFooter'
 import NewsletterForm from './NewsletterForm'
+import './styles/style.css'
 
 function ContainerFooter() {
   return (
-    <footer className='d-flex flex-column align-items-center containerBackground'>
+    <footer className='containerBackground'>
         <NewsletterForm />
         <NavbarFooter />
     </footer>
