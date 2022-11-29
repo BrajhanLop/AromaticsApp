@@ -15,14 +15,12 @@ export default function OffCanvas() {
         </Button>
 
         <Offcanvas className="containerOffcanvas" style={{width:"80%"}} show={show} onHide={handleClose}>
-        <div style={{background:"red"}}>
           <Offcanvas.Header closeButton>
             <Offcanvas.Title></Offcanvas.Title>
           </Offcanvas.Header>
-        </div>
+
         <Offcanvas.Body className="containerOffcanvas">
           
-        {/* /* --------cambios empece dos pasos mas atras  ctrl z y ctrl z + ----- */ }
             <section className="filtro">
               <h5 className="textFiltro">Filtrar por:</h5>
               <div className="containerLinea">
@@ -66,7 +64,6 @@ export default function OffCanvas() {
                 <p className="parrafoFiltro finConMargin">Experimentado</p>
               </div>
             </section>
-          
 
         </Offcanvas.Body>
       </Offcanvas>

@@ -178,18 +178,14 @@
 
     .containerOffcanvas {
         padding: 0;
+        background-color: #1B5E20;
     }
 
     .filtro {
-        background: rgba(27, 94, 32, 0.3);
+        background: #bacfbc;
         width: 100%;
         border-radius: 0;
         margin-top: 0;
-        box-sizing: border-box;
+        height: 90%;
     }
-
-    /* .filtro {
-        width: 100%;
-        margin-top: 0;
-    } */
 }
