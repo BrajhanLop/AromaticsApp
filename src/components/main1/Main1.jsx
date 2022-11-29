@@ -2,6 +2,9 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import imgMain from "../../images/IMG_Hero.png";
 import imgwid from "../../images/Vector.png";
+import nublado from '../../images/nublado.png'
+import mediosoleado from '../../images/mediosoleado.png'
+
 
 const Main1 = () => {
   const [time, settime] = useState(
@@ -37,7 +40,30 @@ const Main1 = () => {
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
 
-  // console.log(climatedata.weather?.[0].icon);
+ console.log(climatedata.weather?.[0].icon);
+
+const selectorIcon = () => {
+
+if (climatedata.weather?.[0].icon=='04n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={nublado} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='01n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={imgwid} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='02n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={mediosoleado} alt="" />
+  )
+}
+
+
+  
+}
+
   return (
     <div className="container pb-3">
       <div className="row">
@@ -50,7 +76,7 @@ const Main1 = () => {
               Te damos la bienvenida al sitio que te ayudará a comenzar a
               plantar aromáticas en el balcón de tu hogar.
             </p>
-            <button className="button px-3 py-1 rounded border-0 d-block mx-auto mb-3">
+            <button className="button px-3 py-1 rounded border-0 d-block mx-auto mb-3 d-md-inline-block ms-md-3">
               COMENZAR
             </button>
           </div>
@@ -69,10 +95,17 @@ const Main1 = () => {
                 </div>
               </div>
               <div className="col-6 text-center py-2">
-                <img className="img-fluid mt-2" src={imgwid} alt="" />
+                
+                {/* <img className="img-fluid mt-2 ico" src={imgwid} alt="" /> */}
+                {
+                  selectorIcon()
+                }
                 <p className="temp mb-0 mt-1">
                   {(Number(climatedata.main?.temp) - 273.15).toFixed(0)} C°
                 </p>
+                {/* {
+                  selectorIcon()
+                } */}
               </div>
             </div>
           </div>

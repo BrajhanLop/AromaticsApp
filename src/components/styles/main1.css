@@ -50,6 +50,7 @@
   z-index: 20;
   /* top: -230px; */
   top: 35%;
+  
 
 }
 
@@ -60,9 +61,26 @@
   }
 }
 
-.main-img {
-    /* margin-left: 10%; */
+@media (max-width: 330.98px) { 
+
+  .flot {
+    width: 260px;
+    height: 120px;
+    top: 90%;
+    left: 8%;
+    
+  }
+  .city {
+    font-size: 18px;
+  }
+  .time {
+    font-size: 38px;
+  }
+
+ 
 }
+
+
 
 .city {
 font-family: 'Montserrat';
@@ -91,5 +109,11 @@ font-size: 28px;
 line-height: 34px;
 
 color: #FFFFFF;
+}
+
+.ico {
+  width: 59px;
+  height: 59px;
+  margin-bottom: 10px;
 }
 
