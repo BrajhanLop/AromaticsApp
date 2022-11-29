@@ -6,7 +6,7 @@ import imgFooter from '../../images/IMG_Footer.jpg'
 const ContainerMain2 = () => {
     return (
         <>
-        <div className='container-fluid'>
+        <div className='container-fluid mt-sm-5 mt-md-0'>
             <Main2/>
         </div>
         <div>
