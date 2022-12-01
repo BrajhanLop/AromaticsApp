@@ -6,8 +6,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 
 import '../styles/navbar.css'
 
-
-
 const NavbarApp = () => {
     return (
         <Navbar className='containerNav' expand="lg">
