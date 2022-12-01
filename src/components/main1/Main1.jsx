@@ -4,7 +4,10 @@ import imgMain from "../../images/IMG_Hero.png";
 import imgwid from "../../images/Vector.png";
 import nublado from '../../images/nublado.png'
 import mediosoleado from '../../images/mediosoleado.png'
-
+import granizo from '../../images/granizo.png'
+import lluvioso from '../../images/lluvioso.png'
+import trueno from '../../images/conrayos.png'
+import viento from '../../images/viento.png'
 
 const Main1 = () => {
   const [time, settime] = useState(
@@ -40,11 +43,11 @@ const Main1 = () => {
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
 
- console.log(climatedata.weather?.[0].icon);
+//  console.log(climatedata.weather?.[0].icon);
 
 const selectorIcon = () => {
 
-if (climatedata.weather?.[0].icon=='04n') {
+if (climatedata.weather?.[0].icon=='04n' || climatedata.weather?.[0].icon=='03n') {
   return (
     <img className="img-fluid mt-2 ico" src={nublado} alt="" />
   )
@@ -57,6 +60,26 @@ else if(climatedata.weather?.[0].icon=='01n') {
 else if(climatedata.weather?.[0].icon=='02n') {
   return (
     <img className="img-fluid mt-2 ico" src={mediosoleado} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='13n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={granizo} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='09n' || climatedata.weather?.[0].icon=='10n' ) {
+  return (
+    <img className="img-fluid mt-2 ico" src={lluvioso} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='11n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={trueno} alt="" />
+  )
+}
+else if(climatedata.weather?.[0].icon=='50n') {
+  return (
+    <img className="img-fluid mt-2 ico" src={viento} alt="" />
   )
 }
 
