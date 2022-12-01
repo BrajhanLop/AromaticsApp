@@ -17,8 +17,7 @@ const NavbarApp = () => {
           <Navbar.Collapse id="basic-navbar-nav" className='navItem '>
             <Nav className="me-5">
               <Nav.Link className='item' href="/">HOME</Nav.Link>
-              <Nav.Link className='item' href="#link">CULTIVO</Nav.Link>
-              <Nav.Link className='item' href="#link">PLANTAS</Nav.Link>
+              <Nav.Link className='item' href="/plantas">PLANTAS</Nav.Link>
               <Nav.Link className='item' href="/contacto">CONTACTO</Nav.Link>
             </Nav>
           </Navbar.Collapse>
