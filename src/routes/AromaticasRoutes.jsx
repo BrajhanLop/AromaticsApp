@@ -17,7 +17,7 @@ const AromaticasRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="/plantas" element={<Plantas />} />
         <Route path="/contacto" element={<Contacto />} />
-        <Route path="/detalle" element={<DetallesPlantas />} />
+        <Route path="/plantas/detalle/:id" element={<DetallesPlantas />} />
         
       </Routes>
       <ContainerFooter/>
