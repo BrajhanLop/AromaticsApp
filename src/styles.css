@@ -1,0 +1,17 @@
+@import url('./pages/plantas/plantas.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400&display=swap');
+
+:root {
+    --main-bg-color: #E8F5E9;
+    --button-bg-color: #A5D6A7;
+    --footer-bg-color: #D9D9D9;
+    --card-fore-color: #1B5E20;
+    --title-fore-color: #002600;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
