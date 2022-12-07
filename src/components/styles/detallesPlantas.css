@@ -13,6 +13,15 @@
 
 .imgContenedor{
     z-index: 10;
+    display: flex;
+    justify-content: end;
+    
+}
+
+.imgDetalle{
+    border-radius: 150px 0 0;
+    width: 80%;
+    height: 356px;
 }
 
 .h3detalle{
@@ -95,6 +104,14 @@
     .icon{
         width: 70%;
     }
+    .imgContenedor{
+        justify-content: center;
+        
+    }
+    
+    .imgDetalle{
+        height: 356px;
+    }
 }
 
 @media (max-width:576px){
@@ -105,8 +122,9 @@
         margin-top: 53rem;
         margin-left: 7.5rem; 
     }
-
-     .imgContenedor img {
+ 
+    .imgDetalle{
+        height: 256px;
         width: 300px;
     }
 
@@ -140,5 +158,9 @@
         margin-top: 57rem;
         margin-left: 4rem;
         margin-right: 25px;   
+    }
+    .imgDetalle{
+        height: 195px;
+        border-radius: 90px 0 0;
     }
 }
