@@ -43,41 +43,41 @@ const Main1 = () => {
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
 
-//  console.log(climatedata.weather?.[0].icon);
+ console.log(climatedata.weather?.[0].icon);
 
 const selectorIcon = () => {
 
-if (climatedata.weather?.[0].icon=='04n' || climatedata.weather?.[0].icon=='03n') {
+if (climatedata.weather?.[0].icon=='04n' || climatedata.weather?.[0].icon=='03n' || climatedata.weather?.[0].icon=='04d' || climatedata.weather?.[0].icon=='03d') {
   return (
     <img className="img-fluid mt-2 ico" src={nublado} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='01n') {
+else if(climatedata.weather?.[0].icon=='01n' || climatedata.weather?.[0].icon=='01d') {
   return (
     <img className="img-fluid mt-2 ico" src={imgwid} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='02n') {
+else if(climatedata.weather?.[0].icon=='02n' || climatedata.weather?.[0].icon=='02d') {
   return (
     <img className="img-fluid mt-2 ico" src={mediosoleado} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='13n') {
+else if(climatedata.weather?.[0].icon=='13n' || climatedata.weather?.[0].icon=='13d') {
   return (
     <img className="img-fluid mt-2 ico" src={granizo} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='09n' || climatedata.weather?.[0].icon=='10n' ) {
+else if(climatedata.weather?.[0].icon=='09n' || climatedata.weather?.[0].icon=='10n' || climatedata.weather?.[0].icon=='09d' || climatedata.weather?.[0].icon=='10d' ) {
   return (
     <img className="img-fluid mt-2 ico" src={lluvioso} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='11n') {
+else if(climatedata.weather?.[0].icon=='11n' | climatedata.weather?.[0].icon=='11d') {
   return (
     <img className="img-fluid mt-2 ico" src={trueno} alt="" />
   )
 }
-else if(climatedata.weather?.[0].icon=='50n') {
+else if(climatedata.weather?.[0].icon=='50n' | climatedata.weather?.[0].icon=='50d') {
   return (
     <img className="img-fluid mt-2 ico" src={viento} alt="" />
   )
