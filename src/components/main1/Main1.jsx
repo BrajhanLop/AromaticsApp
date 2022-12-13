@@ -100,7 +100,7 @@ else if(climatedata.weather?.[0].icon=='50n' | climatedata.weather?.[0].icon=='5
               Te damos la bienvenida al sitio que te ayudará a comenzar a
               plantar aromáticas en el balcón de tu hogar.
             </p>
-            <Link to={'/plantas'}>
+            <Link className="text-decoration-none" to={'/plantas'}>
               <button className="button px-3 py-1 rounded border-0 d-block mx-auto mb-3 d-md-inline-block ms-md-3">
                 COMENZAR
               </button>
