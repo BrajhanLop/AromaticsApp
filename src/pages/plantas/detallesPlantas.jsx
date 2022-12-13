@@ -29,7 +29,7 @@ const resulPlants = () => {
         <div className='detalleContainer'>
                 <div className='mx-4 imgContenedor'>
                     <img
-                    className='img-fluid'
+                    className='imgDetalle'
                      src={plantsfind?.imagen} alt="" />
                 </div>
                 <div className='col-11 col-md-5 col-lg-6 mx-1 contenedorInfo'>
