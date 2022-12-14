@@ -43,6 +43,14 @@ const Plantas = () => {
   // };
 
   const [data, setdata] = useState([]);
+  const [checkedPrim, setCheckedPrim] = useState(false);
+  const [checkedOto, setCheckedOto] = useState(false);
+  const [checkedInt, setCheckedInt] = useState(false);
+  const [checkedExt, setCheckedExt] = useState(false);
+  const [checkedPrinc, setCheckedPrinc] = useState(false);
+  const [checkedInterm, setCheckedInterm] = useState(false);
+  const [checkedAvan, setCheckedAvan] = useState(false);
+
 
   const habilitacheck = (opcion) => {
     const result = plants.filter(
@@ -58,6 +66,133 @@ const Plantas = () => {
     render()
  
   };
+
+  const checkPrimavera = () =>{
+    if (checkedPrim==false && checkedOto==false){
+      setCheckedPrim(true)
+      return
+    }
+    if (checkedPrim==false && checkedOto==true){
+      setCheckedPrim(true)
+      setCheckedOto(false)
+     
+      return
+    }
+    if (checkedPrim==true && checkedOto==false){
+      setCheckedPrim(false)
+      setdata(plants)
+      return
+    }
+
+  }
+  const checkOtoño = () =>{
+    if (checkedPrim==false && checkedOto==false){
+      setCheckedOto(true)
+      return
+    }
+    if(checkedOto==false && checkedPrim==true){
+      setCheckedPrim(false)
+      setCheckedOto(true)
+      return
+    }
+    if(checkedOto==true && checkedPrim==false){
+      setCheckedOto(false)
+      setdata(plants)
+      return
+    }
+
+  }
+  const checkInterior = () =>{
+    if (checkedInt==false && checkedExt==false){
+      setCheckedInt(true)
+      return
+    }
+    if (checkedInt==false && checkedExt==true){
+      setCheckedInt(true)
+      setCheckedExt(false)
+     
+      return
+    }
+    if (checkedInt==true && checkedExt==false){
+      setCheckedInt(false)
+      setdata(plants)
+      return
+    }
+
+  }
+  const checkExterior = () =>{
+    if (checkedInt==false && checkedExt==false){
+      setCheckedExt(true)
+      return
+    }
+    if(checkedExt==false && checkedInt==true){
+      setCheckedInt(false)
+      setCheckedExt(true)
+      return
+    }
+    if(checkedExt==true && checkedInt==false){
+      setCheckedExt(false)
+      setdata(plants)
+      return
+    }
+
+  }
+  const checkPrincipiante = () =>{
+    if (checkedPrinc==false && checkedInterm==false && checkedAvan==false){
+      setCheckedPrinc(true)
+      return
+    }
+    if(checkedPrinc==false && (checkedInterm==true || checkedAvan == true)){
+      setCheckedInterm(false)
+      setCheckedAvan(false)
+      setCheckedPrinc(true)
+      return
+    }
+    if(checkedPrinc==true && (checkedInterm==false && checkedAvan == false)){
+      setCheckedPrinc(false)
+      setdata(plants)
+      return
+    }
+  }
+
+  const checkIntermedio = () =>{
+    if (checkedPrinc==false && checkedInterm==false && checkedAvan==false){
+      setCheckedInterm(true)
+      return
+    }
+    if(checkedInterm==false && (checkedPrinc==true || checkedAvan == true)){
+      setCheckedPrinc(false)
+      setCheckedAvan(false)
+      setCheckedInterm(true)
+      return
+    }
+    if(checkedInterm==true && (checkedPrinc==false && checkedAvan == false)){
+      setCheckedInterm(false)
+      setdata(plants)
+      return
+    }
+  }
+
+  const checkAvanzado = () =>{
+    if (checkedPrinc==false && checkedInterm==false && checkedAvan==false){
+      setCheckedAvan(true)
+      return
+    }
+    if(checkedAvan==false && (checkedInterm==true || checkedPrinc == true)){
+      setCheckedInterm(false)
+      setCheckedAvan(true)
+      setCheckedPrinc(false)
+      return
+    }
+    if(checkedAvan==true && (checkedInterm==false && checkedPrinc == false)){
+      setCheckedAvan(false)
+      setdata(plants)
+      return
+    }
+  }
+  
+
+
 
 
   const render = () => {
@@ -91,9 +226,12 @@ const Plantas = () => {
               <div className="d-flex justify-content-start align-items-center">
                 <input
                   id="primavera"
-                  type="radio"
+                  type="checkbox"
                   className="w-100 h-100 d-none res"
                   name="cultivo"
+                 checked = {checkedPrim}
+                 onChange = {checkPrimavera}
+                  
                 />
                 <label
                   htmlFor="primavera"
@@ -108,9 +246,12 @@ const Plantas = () => {
               <div className="d-flex justify-content-start align-items-center">
                 <input
                   id="otono"
-                  type="radio"
+                  type="checkbox"
                   className="w-100 h-100 d-none res"
                   name="cultivo"
+                  checked = {checkedOto}
+                  onChange = {checkOtoño}
+      
                 />
                 <label
                   htmlFor="otono"
@@ -130,8 +271,10 @@ const Plantas = () => {
                 <input
                   id="int"
                   name="resistencia"
-                  type="radio"
+                  type="checkbox"
                   className="w-100 h-100 d-none res"
+                  checked = {checkedInt}
+                  onChange = {checkInterior}
                 />
                 <label
                   htmlFor="int"
@@ -146,8 +289,10 @@ const Plantas = () => {
                 <input
                   id="ext"
                   name="resistencia"
-                  type="radio"
+                  type="checkbox"
                   className="w-100 h-100 d-none res"
+                  checked = {checkedExt}
+                  onChange = {checkExterior}
                 />
                 <label
                   htmlFor="ext"
@@ -164,9 +309,11 @@ const Plantas = () => {
               <div className="d-flex justify-content-start align-items-center">
                 <input
                   id="basico"
-                  type="radio"
+                  type="checkbox"
                   name="nivel"
                   className="w-100 h-100 d-none res"
+                  checked = {checkedPrinc}
+                  onChange = {checkPrincipiante}
                 />
                 <label
                   htmlFor="basico"
@@ -180,8 +327,10 @@ const Plantas = () => {
                 <input
                   id="intermedio"
                   name="nivel"
-                  type="radio"
+                  type="checkbox"
                   className="w-100 h-100 d-none res"
+                  checked = {checkedInterm}
+                  onChange = {checkIntermedio}
                 />
                 <label
                   htmlFor="intermedio"
@@ -194,9 +343,11 @@ const Plantas = () => {
               <div className="d-flex justify-content-start align-items-center">
                 <input
                   id="avanzado"
-                  type="radio"
+                  type="checkbox"
                   name="nivel"
                   className="w-100 h-100 d-none res"
+                  checked = {checkedAvan}
+                  onChange = {checkAvanzado}
                 />
                 <label
                   htmlFor="avanzado"

@@ -38,7 +38,7 @@
     border: none;
     background: none;
     margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    /* margin-right: 2.5rem; */
 }
 .containerNavbarFooter {
     margin-top: 4.5rem;

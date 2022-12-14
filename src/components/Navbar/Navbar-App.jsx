@@ -2,7 +2,7 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+import logo from '../../images/logo.png'
 
 import '../styles/navbar.css'
 
@@ -11,7 +11,7 @@ const NavbarApp = () => {
         <Navbar className='containerNav' expand="lg">
         <Container className='' >
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
-          <Navbar.Brand className='logoNav ' href="/">Aromáticas</Navbar.Brand>
+          <Navbar.Brand className='logoNav ' href="/"><img src={logo} alt="Aromaticas" /></Navbar.Brand>
           <Navbar.Collapse id="basic-navbar-nav" className='navItem '>
             <Nav className="me-5">
               <Nav.Link className='item' href="/">HOME</Nav.Link>           
