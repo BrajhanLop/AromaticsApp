@@ -48,9 +48,9 @@
     width: 1.5rem;
     height: 1.5rem;
     background-color: #6B996E;
+   
     margin-left: 1rem;
 }
-
 
 
 /* .colorVerde:active {
@@ -60,7 +60,9 @@
 
 
 .res:checked + label {
-    background-color:#0a2c0c;
+    background-image: url("../../images/check.png");
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .containerLinea {
