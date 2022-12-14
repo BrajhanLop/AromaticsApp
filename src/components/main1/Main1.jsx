@@ -44,7 +44,7 @@ const Main1 = () => {
     navigator.geolocation.getCurrentPosition(success, error);
   }, []);
 
- console.log(climatedata.weather?.[0].icon);
+//  console.log(climatedata.weather?.[0].icon);
 
 const selectorIcon = () => {
 
@@ -83,7 +83,11 @@ else if(climatedata.weather?.[0].icon=='50n' | climatedata.weather?.[0].icon=='5
     <img className="img-fluid mt-2 ico" src={viento} alt="" />
   )
 }
-
+else {
+  return(
+    <img className="img-fluid mt-2 ico" src={imgwid} alt="" />
+  )
+}
 
   
 }
@@ -127,7 +131,7 @@ else if(climatedata.weather?.[0].icon=='50n' | climatedata.weather?.[0].icon=='5
                   selectorIcon()
                 }
                 <p className="temp mb-0 mt-1">
-                  {(Number(climatedata.main?.temp) - 273.15).toFixed(0)} C°
+                  {Number(climatedata.main?.temp)? (Number(climatedata.main?.temp) - 273.15).toFixed(0) :''} C°
                 </p>
                 {/* {
                   selectorIcon()
